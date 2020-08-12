@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Post Pivital
+
+</title>
+<script>
+  window.addEventListener('load', function() {
+    document.querySelector('input[type="file"]').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            var img = document.querySelector('img');  // $('img')[0]
+            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+            img.onload = imageIsLoaded;
+        }
+    });
+  });
+  
+  function imageIsLoaded() { 
+    alert(this.src);  // blob url
+    // update width and height ...
+  }
+
+
+
+
+
+
+
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: white;
+  color: #080808;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: orange;
+  color:  #404040;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+    <div class="header">
+        <img src="logo.jpg">
+     
+    </div>
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+      <button type="button" onclick="pageRedirect()">Technician</button>
+    <button type="button" onclick="pageRedirect()">Troubleshooting//การแก้ไขปัญหา</button>
+    <button type="button" onclick="pageRedirect()">Salesforce</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="side">
+          <h2>Equipment</h2>
+         
+
+
+          <input type='file' />
+<br><img id="myImg" src="#" alt="your image" height=200 width=100>
+          
+        </br>
+      </br>
+      <br>
+      <br>
+      <br>
+      
+      <br>
+      <br>
+<h2>Servers</h2>
+
+<input type='file' />
+<br><img id="myImg" src="#" alt="your image" height=200 width=100>
+<br>
+          <br>
+          <br>
+          
+          <br>
+          <br>
+
+
+
+<h3>Back Room </h3>
+
+
+<input type='file' />
+<br><img id="myImg" src="#" alt="your image" height=200 width=100>
+
+
+<br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <p>Set up</p>
+          <div class="fakeimg" style="height:60px;">Image</div><br>
+          <div class="fakeimg" style="height:60px;">Image</div><br>
+          <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="main">
+          <h2>Place</h2>
+          <h5></h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p></p>
+          <p></p>
+          <br>
+          <br>
+          <br>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>Place</h2>
+          <h5></h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="footer">
+        <h2>Pivital</h2>
+      </div>
+      
+      </body>
+      </html>
