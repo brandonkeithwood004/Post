@@ -11,6 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^4.5.2",
+    "cordova": "^10.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jasmine": "^3.6.1",
+    "jquery": "^3.5.1",
+    "mocha": "^8.1.1"
   }
 }
