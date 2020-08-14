@@ -25,12 +25,12 @@ default: Date.now
 });
 
 
-//mongoose.Schema({
-//username: String,
-//password: String,
+mongoose.Schema({
+username: String,
+password: String,
 
 
-//})
+})
 
 
 module.exports = mongoose.model('Posts',PostSchema);

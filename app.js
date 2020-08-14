@@ -1,5 +1,5 @@
-const express = require("express")
-const app = express()
+const express = require("express");
+const app = express();
 
 //Import Routes
 const authRoute = require('./routes/auth');
@@ -9,13 +9,6 @@ const authRoute = require('./routes/auth');
 
 //Route Middle ware
 app.use('/api/user')
-
-
-
-
-
-
-
 
 
 
